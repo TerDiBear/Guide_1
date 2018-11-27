@@ -1,0 +1,59 @@
+body {
+ height: 2000px;
+ margin: 0;
+ background:
+ radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%,
+transparent 80%, transparent),
+ radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%,
+transparent 80%, transparent) 50px 50px,
+ linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+ linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+ background-color: slategray;
+ background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+.header {
+     margin: 0;
+ font-size: 40px;
+ color: #FFFFFF;
+ border: 1px dashed orange;
+ position: fixed;
+ height: 150px;
+ width: 100%;
+ text-align: center;
+}
+
+.sticky {
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid black;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+$(window).scroll(function() {
+      if ($(this).scrollTop() > 1){
+      $('.header').addClass('sticky');
+      }
+      else
+      {
+      $('.header').removeClass('sticky');}
+}
+
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></scri
+pt>
+<script type="text/javascript" src="main.js"></script>
+
+.pic{
+    max-width: 300px;
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    float: left;
+    display: inline-block;
+  }
+.w3-container {
+  font-size: 50%;
+}
